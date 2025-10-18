@@ -369,11 +369,14 @@
     file: "server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
         -working: true
         -agent: "testing"
         -comment: "🎉 PROSPECTS WORKFLOW V4 - 100% FUNCTIONAL! Complete 5-step prospects workflow tested and working perfectly: ✅ STEP 1: Prospect creation via POST /api/contact-messages (status: nouveau) ✅ STEP 2: SuperAdmin assigns to Employee via PATCH /api/contact-messages/{id}/assign ✅ STEP 3: Employee assigns to consultant (50k CFA payment) via PATCH /api/contact-messages/{id}/assign-consultant ✅ STEP 4: SuperAdmin adds consultant notes via PATCH /api/contact-messages/{id}/consultant-notes (status: en_consultation) ✅ STEP 5: Employee converts to client via POST /api/contact-messages/{id}/convert-to-client (creates CLIENT user + case). All workflow transitions working correctly: nouveau → assigne_employe → paiement_50k → en_consultation → converti_client. Email notifications configured (SendGrid logs show attempts). Access restrictions working: SuperAdmin sees all prospects, Manager/Employee see assigned only, Client denied (403). Fixed backend bug: WORKFLOWS_CONFIG → WORKFLOWS in convert-to-client endpoint. Credentials used: SuperAdmin (superadmin@aloria.com/SuperAdmin123!), Manager (manager@test.com/password123)."
+        -working: "NA"
+        -agent: "main"
+        -comment: "🎯 FRONTEND TESTING REQUIRED: User requested comprehensive frontend testing of entire prospect workflow from creation to client conversion. Backend already tested (100% functional). Need to validate: 1) Landing page contact form submission creates prospect, 2) SuperAdmin can view all prospects in dashboard, 3) SuperAdmin can assign prospect to Employee/Manager, 4) Employee/Manager can view assigned prospects, 5) Employee/Manager can assign prospect to consultant with 50k CFA payment, 6) SuperAdmin can add consultant notes, 7) Employee/Manager can convert prospect to client, 8) All status transitions visible in UI, 9) Access restrictions enforced in frontend. Testing ProspectManagement.js and MyProspects.js components."
 
 ## frontend:
   - task: "Landing page with contact form France/Canada"
