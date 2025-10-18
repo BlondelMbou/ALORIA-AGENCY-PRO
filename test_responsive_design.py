@@ -13,7 +13,7 @@ class ResponsiveDesignTester:
     """Testeur de design responsive pour ALORIA AGENCY"""
     
     def __init__(self):
-        self.frontend_url = "https://immi-portal-app.preview.emergentagent.com"
+        self.frontend_url = "https://aloria-prospect.preview.emergentagent.com"
         self.test_results = []
         
         # Breakpoints à tester
@@ -270,7 +270,7 @@ def test_mobile_navigation():
 🧪 TEST MANUEL - NAVIGATION MOBILE
 ================================
 
-1. Ouvrez https://immi-portal-app.preview.emergentagent.com sur mobile
+1. Ouvrez https://aloria-prospect.preview.emergentagent.com sur mobile
 2. Vérifiez que le menu hamburger s'affiche (3 lignes)
 3. Tapez sur le menu hamburger
 4. Vérifiez l'overlay plein écran avec navigation
